@@ -61,7 +61,7 @@ double j(const double x)
 		do
 		{
 			k++;
-			double B = pow(2, 2 * k) * pow(x, 2 * k) / ((2. * k - 1.) * 2. * k);
+			double B = pow(x, 2 * k + 2) / (pow(4, k) * pow(k, 2) - pow(2, 2 * k - 1) * k);
 			a *= B;
 			R += a;
 		} while (k < 7);
